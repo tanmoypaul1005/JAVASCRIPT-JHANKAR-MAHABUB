@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   article{
+     border: 2px solid lawngreen;
+     border-radius: 20px;
+     margin: 5px;
+     padding: 5px;
+    }
+</style>
+<body>
+   <main>
+       <section>
+        <article>
+            <h3>article-1</h3>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos rem tempore nulla? Et mollitia, harum qui accusamus optio atque, quibusdam quod corrupti odit, dolorem minima fuga quaerat ipsum eos!</p>
+        </article>
+        <article>
+            <h3>article-2</h3>
+            <p class="author">author-2</p>
+            <p class="description">Officia consequuntur quod eius temporibus! Nihil temporibus quod, reprehenderit iusto consectetur, sunt iure enim facere vel saepe optio quibusdam! Doloribus laborum modi fuga illum hic minima accusamus commodi beatae error?</p>
+        </article>
+        <article>
+            <h3>article-3</h3>
+            <p class="author">author-3</p>
+            <p class="description">Ipsa, error eos. Aperiam harum at cumque vitae totam repellat, ad beatae dolorem nostrum sint laudantium facere minus fugiat nesciunt ullam pariatur debitis expedita est doloremque unde tenetur vero enim.</p>
+        </article> 
+       </section>
+   </main>
+
+
+   <script>
+     var author=document.getElementsByClassName('author');
+     for (var i = 0; i< author.length; i++) {
+        var element=author[i];
+        element.innerHTML='Lakhok-'+(i+1);
+        element.style.backgroundColor='lightblue';
+        element.style.margin='10px';
+         
+     }  
+   </script>
+    </div>
+</body>
+</html>

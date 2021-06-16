@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <ul id="myList">
+            <li class="first">Lorem, ipsum dolor.</li>
+            <li class="item">Temporibus, debitis suscipit!</li>
+            <li class="item">Nisi, qui optio.</li>
+            <li class="item">Nesciunt, odit quia.</li>
+            <li class="item">Unde, facere mollitia?</li>
+        </ul>
+    </div>
+<button class="addNew">Add New Item</button>
+
+
+<script>
+var items=document.getElementsByClassName('item');
+for (let i = 0; i < items.length; i++) {
+    const element = items[i];
+    element.addEventListener('click',function(event){
+    event.target.parentNode.removeChild(event.target);
+    }) 
+}
+document.getElementById('addNew').addEventListener('click',function(event){
+    var itemParent=document.getElementById('myList');
+    var newitem=document.createElement('li');
+    newitem.innerText='Brand New item';
+    itemParent.appendChild(newitem);
+})
+
+
+
+
+</script>    
+</body>
+</html>
